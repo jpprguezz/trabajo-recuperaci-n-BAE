@@ -46,7 +46,7 @@ INSERT INTO Estudiantes (DNI, Nombre_Estudiante, Apellidos_Estudiante) VALUES
 ('11223344C', 'Carlos', 'Martínez');
 ```
 
-- #### Tabla "pertenece_a_estudiantes"
+- #### Tabla "pertenencia_a_estudiantes"
 
 ```sql
 CREATE TABLE pertenencia_a_estudiantes (
@@ -97,13 +97,13 @@ INSERT INTO posee_estudiantes (ID_Direccion, DNI_Estudiante) VALUES
 
 ```sql
 CREATE TABLE direccion (
-	ID  integer NOT NULL PRIMARY KEY,
-	Provincia text NOT NULL,
-	Numero integer NOT NULL,
-	Codigo_Postal integer NOT NULL,
-	Piso integer NOT NULL,
-	Calle text NOT NULL,
-	Municipio text NOT NULL
+	ID  INT NOT NULL PRIMARY KEY,
+	Provincia VARCHAR(100) NOT NULL,
+	Numero INT NOT NULL,
+	Codigo_Postal INTEGER NOT NULL,
+	Piso INT NOT NULL,
+	Calle VARCHAR(100) NOT NULL,
+	Municipio VARCHAR(100) NOT NULL
  );
 
 INSERT INTO Direccion (ID, Provincia, Numero, Codigo_Postal, Piso, Calle, Municipio) VALUES
