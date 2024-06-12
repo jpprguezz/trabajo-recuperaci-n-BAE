@@ -160,20 +160,22 @@ DELIMITER ;
 
 CALL InsertarNuevaDireccion(5);
 
++----+-----------------------------+--------+---------------+------+-------------------------+-----------------------------+
+| ID | Provincia                   | Numero | Codigo_Postal | Piso | Calle                   | Municipio                   |
++----+-----------------------------+--------+---------------+------+-------------------------+-----------------------------+
+|  1 | Madrid                      |    123 |         28001 |    1 | Calle Viena             | Madrid                      |
+|  2 | Barcelona                   |    456 |          8001 |    2 | Calle Segovia           | Barcelona                   |
+|  3 | Valencia                    |    789 |         46001 |    3 | Calle Arcilleria        | Valencia                    |
+| 28 | Provincia921.9593563321599  |    800 |         23287 |   76 | Calle1270.2226557491558 | Municipio135.88802491863075 |
+| 32 | Provincia568.507571302827   |    890 |         74415 |    5 | Calle225.3997793657703  | Municipio383.87260994303284 |
+| 72 | Provincia157.08241533216312 |    645 |         75127 |   82 | Calle8605.555918631662  | Municipio333.6571309097643  |
+| 74 | Provincia774.8940622200204  |    683 |          8585 |   38 | Calle6571.746828567001  | Municipio54.8127722505599   |
+| 98 | Provincia953.6042473778168  |    836 |         31913 |    8 | Calle4811.710989858686  | Municipio57.0822846676058   |
++----+-----------------------------+--------+---------------+------+-------------------------+-----------------------------+
+
 SELECT * FROM direccion;
 
-+----+----------------------------+--------+---------------+------+-------------------------+-----------------------------+
-| ID | Provincia                  | Numero | Codigo_Postal | Piso | Calle                   | Municipio                   |
-+----+----------------------------+--------+---------------+------+-------------------------+-----------------------------+
-|  1 | Madrid                     |    123 |         28001 |    1 | Calle Viena             | Madrid                      |
-|  2 | Barcelona                  |    456 |          8001 |    2 | Calle Segovia           | Barcelona                   |
-|  3 | Valencia                   |    789 |         46001 |    3 | Calle Arcilleria        | Valencia                    |
-| 20 | Provincia543.5812534238969 |    146 |          9525 |    4 | Calle9176.487782203116  | Municipio186.47695126615181 |
-| 32 | Provincia205.7592116349928 |     86 |         80787 |   78 | Calle4979.932601544943  | Municipio54.790544933444394 |
-| 58 | Provincia491.5008307355464 |    724 |         14278 |   54 | Calle2894.012846885261  | Municipio326.541327616704   |
-| 82 | Provincia95.61687158012472 |     28 |         85308 |   18 | Calle3481.3307910052417 | Municipio78.49039964237288  |
-| 94 | Provincia94.9759782245159  |    665 |          3850 |   19 | Calle8769.040199712888  | Municipio315.62398776004466 |
-+----+----------------------------+--------+---------------+------+-------------------------+-----------------------------+
+
 ```
 
 5. Insertar profesores en la tabla profesores (este caso esta dirigido para cuando se quiere añadir uno o varios profesor de forma manual, introduciendo los datos del profesor de forma directa)
