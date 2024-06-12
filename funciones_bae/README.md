@@ -135,11 +135,11 @@ END //
 
 DELIMITER ;
 
-SELECT ContarProfesoresTutores()
+SELECT ContarProfesoresTutores();
 
 +---------------------------+
 | ContarProfesoresTutores() |
 +---------------------------+
-|                         8 |
+|                         9 |
 +---------------------------+
 ```

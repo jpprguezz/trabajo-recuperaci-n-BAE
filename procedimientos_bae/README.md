@@ -27,29 +27,29 @@ DELIMITER ;
 
 CALL InsertarNuevoProfesor(16)
 
-select * from profesores;
+SELECT * FROM profesores;
 +----+--------------+------------+-----------+----------+
 | ID | Apellidos    | Nombre     | DNI       | Es_Tutor |
 +----+--------------+------------+-----------+----------+
 |  1 | García       | Juan       | 12345678A | Si       |
 |  2 | López        | María      | 87654321B | No       |
 |  3 | Martínez     | Carlos     | NULL      | Si       |
-|  4 | Profesor7100 | Nombre5216 | 47826775  | No       |
-|  5 | Profesor6974 | Nombre75   | 94533739  | No       |
-|  6 | Profesor6852 | Nombre3133 | 51104987  | No       |
-|  7 | Profesor5430 | Nombre8694 | 71778725  | No       |
-|  8 | Profesor7508 | Nombre8117 | 80599779  | No       |
-|  9 | Profesor5563 | Nombre9971 | 31648724  | No       |
-| 10 | Profesor62   | Nombre2576 | 26931259  | No       |
-| 11 | Profesor612  | Nombre5845 | 73876252  | No       |
-| 12 | Profesor4858 | Nombre6077 | 58123466  | Si       |
-| 13 | Profesor6713 | Nombre1075 | 52373369  | Si       |
-| 14 | Profesor9092 | Nombre6576 | 56066049  | No       |
-| 15 | Profesor4700 | Nombre8588 | 88413129  | No       |
-| 16 | Profesor5685 | Nombre3098 | 84354591  | Si       |
-| 17 | Profesor9112 | Nombre6911 | 72162388  | No       |
-| 18 | Profesor5097 | Nombre9438 | 18978304  | Si       |
-| 19 | Profesor185  | Nombre7399 | 64405859  | Si       |
+|  4 | Profesor1897 | Nombre2302 | 58183837  | Si       |
+|  5 | Profesor3478 | Nombre830  | 37164252  | No       |
+|  6 | Profesor9310 | Nombre8275 | 34448738  | Si       |
+|  7 | Profesor1661 | Nombre1109 | 5613668   | No       |
+|  8 | Profesor5714 | Nombre131  | 35141182  | No       |
+|  9 | Profesor5342 | Nombre5180 | 98719377  | Si       |
+| 10 | Profesor9488 | Nombre5979 | 14311839  | No       |
+| 11 | Profesor1797 | Nombre1332 | 12692235  | Si       |
+| 12 | Profesor7939 | Nombre2647 | 94178644  | No       |
+| 13 | Profesor7488 | Nombre9997 | 75204978  | No       |
+| 14 | Profesor5493 | Nombre4633 | 66838455  | No       |
+| 15 | Profesor7555 | Nombre9213 | 33987918  | No       |
+| 16 | Profesor6578 | Nombre4826 | 43942168  | No       |
+| 17 | Profesor4287 | Nombre8955 | 19143164  | Si       |
+| 18 | Profesor7785 | Nombre807  | 6790650   | Si       |
+| 19 | Profesor2841 | Nombre1276 | 78597724  | No       |
 +----+--------------+------------+-----------+----------+
 ```
 
@@ -199,28 +199,28 @@ DELIMITER ;
 CALL InsertarProfesor('Soria', 'Francisco', '07723315L', 'Si');
 
 SELECT * FROM profesores;
-+----+--------------+------------+------------+----------+
-| ID | Apellidos    | Nombre     | DNI        | Es_Tutor |
-+----+--------------+------------+------------+----------+
-|  1 | García       | Juan       | 12345678A  | Si       |
-|  2 | López        | María      | 87654321B  | No       |
-|  3 | Martínez     | Carlos     | NULL       | Si       |
-|  4 | Profesor7100 | Nombre5216 | 47826775   | No       |
-|  5 | Profesor6974 | Nombre75   | 94533739   | No       |
-|  6 | Profesor6852 | Nombre3133 | 51104987   | No       |
-|  7 | Profesor5430 | Nombre8694 | 71778725   | No       |
-|  8 | Profesor7508 | Nombre8117 | 80599779   | No       |
-|  9 | Profesor5563 | Nombre9971 | 31648724   | No       |
-| 10 | Profesor62   | Nombre2576 | 26931259   | No       |
-| 11 | Profesor612  | Nombre5845 | 73876252   | No       |
-| 12 | Profesor4858 | Nombre6077 | 58123466   | Si       |
-| 13 | Profesor6713 | Nombre1075 | 52373369   | Si       |
-| 14 | Profesor9092 | Nombre6576 | 56066049   | No       |
-| 15 | Profesor4700 | Nombre8588 | 88413129   | No       |
-| 16 | Profesor5685 | Nombre3098 | 84354591   | Si       |
-| 17 | Profesor9112 | Nombre6911 | 72162388   | No       |
-| 18 | Profesor5097 | Nombre9438 | 18978304   | Si       |
-| 19 | Profesor185  | Nombre7399 | 64405859   | Si       |
-| 20 | Soria        | Francisco  | 07723315L  | Si       |
-+----+--------------+------------+------------+----------+
++----+--------------+------------+-----------+----------+
+| ID | Apellidos    | Nombre     | DNI       | Es_Tutor |
++----+--------------+------------+-----------+----------+
+|  1 | García       | Juan       | 12345678A | Si       |
+|  2 | López        | María      | 87654321B | No       |
+|  3 | Martínez     | Carlos     | NULL      | Si       |
+|  4 | Profesor1897 | Nombre2302 | 58183837  | Si       |
+|  5 | Profesor3478 | Nombre830  | 37164252  | No       |
+|  6 | Profesor9310 | Nombre8275 | 34448738  | Si       |
+|  7 | Profesor1661 | Nombre1109 | 5613668   | No       |
+|  8 | Profesor5714 | Nombre131  | 35141182  | No       |
+|  9 | Profesor5342 | Nombre5180 | 98719377  | Si       |
+| 10 | Profesor9488 | Nombre5979 | 14311839  | No       |
+| 11 | Profesor1797 | Nombre1332 | 12692235  | Si       |
+| 12 | Profesor7939 | Nombre2647 | 94178644  | No       |
+| 13 | Profesor7488 | Nombre9997 | 75204978  | No       |
+| 14 | Profesor5493 | Nombre4633 | 66838455  | No       |
+| 15 | Profesor7555 | Nombre9213 | 33987918  | No       |
+| 16 | Profesor6578 | Nombre4826 | 43942168  | No       |
+| 17 | Profesor4287 | Nombre8955 | 19143164  | Si       |
+| 18 | Profesor7785 | Nombre807  | 6790650   | Si       |
+| 19 | Profesor2841 | Nombre1276 | 78597724  | No       |
+| 20 | Soria        | Francisco  | 07723315L | Si       |
++----+--------------+------------+-----------+----------+
 ```
