@@ -173,10 +173,6 @@ CALL InsertarNuevaDireccion(5);
 | 74 | Provincia774.8940622200204  |    683 |          8585 |   38 | Calle6571.746828567001  | Municipio54.8127722505599   |
 | 98 | Provincia953.6042473778168  |    836 |         31913 |    8 | Calle4811.710989858686  | Municipio57.0822846676058   |
 +----+-----------------------------+--------+---------------+------+-------------------------+-----------------------------+
-
-SELECT * FROM direccion;
-
-
 ```
 
 5. Insertar profesores en la tabla profesores (este caso esta dirigido para cuando se quiere añadir uno o varios profesor de forma manual, introduciendo los datos del profesor de forma directa)
@@ -224,7 +220,4 @@ SELECT * FROM profesores;
 | 19 | Profesor2841 | Nombre1276 | 78597724  | No       |
 | 20 | Soria        | Francisco  | 07723315L | Si       |
 +----+--------------+------------+-----------+----------+
-
-INSERT INTO profesores (Apellidos, Nombre, DNI, Es_Tutor) VALUES ('López', 'María', '98765432B', 'Si');
-
 ```
