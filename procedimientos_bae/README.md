@@ -65,8 +65,8 @@ BEGIN
     DECLARE p_apellido_estudiante VARCHAR(100);
     WHILE counter < iterations DO
     SET p_DNI = FLOOR(RAND() * 99999999);
-    SET p_nombre_estudiante = CONCAT('Apellido', ROUND(RAND() * 10000));
-    SET p_apellido_estudiante = CONCAT('Nombre', ROUND(RAND() * 10000));
+    SET p_nombre_estudiante = CONCAT('Nombre', ROUND(RAND() * 10000));
+    SET p_apellido_estudiante = CONCAT('Apellido', ROUND(RAND() * 10000));
 
     INSERT INTO estudiantes (DNI, Nombre_Estudiante, Apellidos_Estudiante) VALUES (p_dni, p_nombre_estudiante, p_apellido_estudiante);
     SET counter = counter  + 1;
@@ -77,17 +77,18 @@ DELIMITER ;
 CALL InsertarNuevoEstudiante(5);
 
 SELECT * FROM estudiantes;
+
 +-----------+-------------------+----------------------+
 | DNI       | Nombre_Estudiante | Apellidos_Estudiante |
 +-----------+-------------------+----------------------+
 | 11223344C | Carlos            | Martínez             |
 | 12345678A | Juan              | García               |
-| 31340449  | Apellido9984      | Nombre519            |
-| 64800453  | Apellido6210      | Nombre1609           |
-| 77066652  | Apellido7670      | Nombre5229           |
-| 82740442  | Apellido2355      | Nombre6955           |
+| 25113375  | Nombre8943        | Apellido7179         |
+| 45125857  | Nombre2282        | Apellido7871         |
+| 75705809  | Nombre2472        | Apellido9650         |
+| 8318682   | Nombre5210        | Apellido3555         |
 | 87654321B | María             | López                |
-| 94154405  | Apellido2250      | Nombre3005           |
+| 90672084  | Nombre3799        | Apellido1794         |
 +-----------+-------------------+----------------------+
 ```
 
@@ -223,4 +224,7 @@ SELECT * FROM profesores;
 | 19 | Profesor2841 | Nombre1276 | 78597724  | No       |
 | 20 | Soria        | Francisco  | 07723315L | Si       |
 +----+--------------+------------+-----------+----------+
+
+INSERT INTO profesores (Apellidos, Nombre, DNI, Es_Tutor) VALUES ('López', 'María', '98765432B', 'Si');
+
 ```

@@ -40,7 +40,7 @@ CREATE TABLE estudiantes (
     Apellidos_Estudiante VARCHAR(100) NOT NULL
 );
 
-INSERT INTO Estudiantes (DNI, Nombre_Estudiante, Apellidos_Estudiante) VALUES
+INSERT INTO estudiantes (DNI, Nombre_Estudiante, Apellidos_Estudiante) VALUES
 ('12345678A', 'Juan', 'García'),
 ('87654321B', 'María', 'López'),
 ('11223344C', 'Carlos', 'Martínez');
